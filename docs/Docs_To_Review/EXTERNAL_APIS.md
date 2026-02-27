@@ -254,7 +254,7 @@ financial, military, environmental, humanitarian, and technology domains.
 
 ---
 
-#### 11 — blockchain.info (Bitcoin Hash Rate)
+#### 11 — blockchain.info (Bitcoin hash speed)
 
 | Field | Value |
 |---|---|
@@ -886,7 +886,7 @@ graph TD
     M1[FRED<br/>Treasury yields, rates] --> MS[/api/macro-signals<br/>Composite Builder]
     M2[CoinGecko<br/>Crypto market cap] --> MS
     M3[alternative.me<br/>Fear & Greed] --> MS
-    M4[blockchain.info<br/>BTC hash rate] --> MS
+    M4[blockchain.info<br/>BTC hash speed] --> MS
     MS --> MSvc[MacroService]
     MSvc --> MP[MacroSignalsPanel]
 ```

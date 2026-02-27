@@ -1196,7 +1196,7 @@
         "flow": "Przepływ",
         "regime": "Reżim",
         "btcTrend": "Trend BTC",
-        "hashRate": "Hash Rate",
+        "hashRate": "hash speed",
         "mining": "Wydobycie",
         "fearGreed": "Strach &amp; Chciwość"
       }

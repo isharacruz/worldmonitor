@@ -122,7 +122,7 @@ async function computeMacroSignals(): Promise<GetMacroSignalsResponse> {
     mayerMultiple = +(btcCurrent / btcSma200).toFixed(2);
   }
 
-  // 5. Hash Rate
+  // 5. hash speed
   let hashStatus = 'UNKNOWN';
   let hashChange: number | null = null;
   if (mempoolHash.status === 'fulfilled') {
@@ -171,7 +171,7 @@ async function computeMacroSignals(): Promise<GetMacroSignalsResponse> {
     { name: 'Flow Structure', status: flowStatus, bullish: flowStatus === 'ALIGNED' },
     { name: 'Macro Regime', status: regimeStatus, bullish: regimeStatus === 'RISK-ON' },
     { name: 'Technical Trend', status: trendStatus, bullish: trendStatus === 'BULLISH' },
-    { name: 'Hash Rate', status: hashStatus, bullish: hashStatus === 'GROWING' },
+    { name: 'hash speed', status: hashStatus, bullish: hashStatus === 'GROWING' },
     { name: 'Mining Cost', status: miningStatus, bullish: miningStatus === 'PROFITABLE' },
     { name: 'Fear & Greed', status: fgLabel, bullish: fgValue !== undefined && fgValue > 50 },
   ];
